@@ -247,8 +247,8 @@ function conky_main_bars()
 			mid_colour={{0.5,0x4F5E63,0.60}}
 		},
 		{
-			name="acpitemp",
-			arg="",
+			name="execi",
+			arg="10 sensors|grep CPU|cut -c 18-21",
 			max=100,
 			alarm=80,
 			bg_colour={0x4F5E63,0.20},

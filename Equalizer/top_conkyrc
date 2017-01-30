@@ -9,7 +9,7 @@ own_window_argb_visual true
 # Set the transparency alpha value from 0 to 255
 own_window_argb_value 0
 
-update_interval 1					# this is used if system is not running on battery battery
+update_interval 0.5					# this is used if system is not running on battery battery
 update_interval_on_battery 1			# this is used if system is running on battery battery, higher value ensures that conky save battery power
 
 double_buffer yes

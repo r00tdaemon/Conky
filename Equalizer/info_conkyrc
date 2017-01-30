@@ -41,4 +41,4 @@ ${font monospace:pixelsize=14}${color 63767B}
 Hostname: $alignr${nodename}
 Uptime: $alignr${uptime}
 Battery: $alignr${battery_percent BAT0}%
-Temperature: $alignr${acpitemp}°C
+Temperature: $alignr${execi 10 sensors|grep CPU|cut -c18-25}
