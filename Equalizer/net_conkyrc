@@ -15,8 +15,8 @@ update_interval_on_battery 1			# this is used if system is running on battery ba
 double_buffer yes
 no_buffers yes
 text_buffer_size 2048
-gap_x 1590
-gap_y 580 
+gap_x 1550
+gap_y 700
 minimum_size 250
 maximum_width 250
 
@@ -38,10 +38,10 @@ uppercase no
 
 TEXT
 
-${font monospace:pixelsize=14}${color 63767B}
+${font monospace:pixelsize=16}${color 6A7F85}
 Wireless Essid:$alignr${wireless_essid wlp5s0}
 Wireless Signal:$alignr${if_up wlp5s0}${wireless_link_qual_perc wlp5s0}%${else}${endif}
 Upload:$alignr${upspeedf wlp5s0} kbps
-Total Upload:$alignr${totalup wlp5s0}${color 63767B}
+Total Upload:$alignr${totalup wlp5s0}${color 6A7F85}
 Download:$alignr${downspeedf wlp5s0} kbps
 Total Download:$alignr${totaldown wlp5s0}

@@ -15,8 +15,8 @@ update_interval_on_battery 600			# this is used if system is running on battery 
 double_buffer yes
 no_buffers yes
 text_buffer_size 2048
-gap_x 1540
-gap_y 700
+gap_x 1500
+gap_y 850
 minimum_size 300
 maximum_width 300
 
@@ -38,6 +38,6 @@ uppercase no
 
 TEXT
 
-${font monospace:pixelsize=20}${color 56696F}
+${font monospace:pixelsize=18}${color 56696F}
 Wireless Ip:$alignr${if_up wlp5s0}${addr wlp5s0}${else}${endif}
 Public Ip:$alignr${if_up wlp5s0}${execi 30 ~/.conky/scripts/ip.sh}${else}${endif}

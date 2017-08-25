@@ -16,14 +16,14 @@ double_buffer yes
 no_buffers yes
 text_buffer_size 2048
 gap_x 0
-gap_y 950 
-minimum_size 1920
+gap_y 50 
+minimum_size 200 50
 maximum_width 1920
 
 border_inner_margin 0
 border_outer_margin 0
 use_spacer none
-alignment tl
+alignment bm
 
 draw_shades no
 draw_outline no

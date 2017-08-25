@@ -15,9 +15,9 @@ update_interval_on_battery 1			# this is used if system is running on battery ba
 double_buffer yes
 no_buffers yes
 text_buffer_size 2048
-gap_x 1080
-gap_y 700
-minimum_size 800 200
+gap_x 1220
+gap_y 100
+minimum_size 600 400
 maximum_width 1920
 
 border_inner_margin 0
@@ -32,7 +32,7 @@ draw_graph_borders no
 
 override_utf8_locale yes
 use_xft yes
-xftfont ubuntu light:size=8
+xftfont ubuntu light:size=11
 xftalpha 0.5    
 uppercase yes
 
@@ -45,5 +45,14 @@ TEXT
 
 
 ${color 56696F}
-#${voffset 150}${goto 18}cpu 
-${voffset 150}${goto 88}cpu ${goto 158}ram${goto 228}swap${goto 298}home${goto 368}root${goto 444}up${goto 508}down${goto 578}wifi${goto 637}battery${goto 718}temp
+#${goto 0}cpu 
+${voffset -90}${goto 400}cpu 
+${voffset 20}${goto 470}ram
+${voffset 63}${goto 520}swap
+${voffset 120}${goto 520}root
+${voffset 69}${goto 470}home
+${voffset 18}${goto 380}upload
+${voffset -52}${goto 90}download
+${voffset -92}${goto 40}wifi
+${voffset -175}${goto 25}battery
+${voffset -88}${goto 90}temp

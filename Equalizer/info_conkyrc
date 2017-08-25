@@ -15,8 +15,8 @@ update_interval_on_battery 1				# this is used if system is running on battery b
 double_buffer yes
 no_buffers yes
 text_buffer_size 2048
-gap_x 1590
-gap_y 500
+gap_x 1550
+gap_y 600
 minimum_size 250
 maximum_width 250
 
@@ -37,8 +37,8 @@ xftalpha 0.2
 uppercase no
 
 TEXT
-${font monospace:pixelsize=14}${color 63767B}
+${font monospace:pixelsize=16}${color 6A7F85}
 Hostname: $alignr${nodename}
 Uptime: $alignr${uptime}
 Battery: $alignr${battery_percent BAT0}%
-Temperature: $alignr${execi 10 sensors|grep CPU|cut -c18-25}
+Temperature: $alignr${acpitemp}
